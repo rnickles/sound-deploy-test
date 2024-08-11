@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Game with Sound</title>
+</head>
+<body>
+    <button id="playSound">Hey!</button>
+    
+    <audio id="heySound" src="hey.mp3"></audio>
+    
+    <script>
+        const jumpSound = document.getElementById("heySound");
+        const playSoundButton = document.getElementById("playSound");
+
+        playSoundButton.addEventListener("click", () => {
+            jumpSound.play();
+        });
+    </script>
+</body>
+</html>
